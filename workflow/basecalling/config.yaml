@@ -1,0 +1,10 @@
+## Emulate: --cluster "sbatch --account=pi-spott --partition=gpu --ntasks-per-node=8 --nodes=1 --gres=gpu:1" --jobs 10
+cluster: "sbatch --account=pi-spott --partition=gpu --nodes=1 --ntasks-per-node=8 --gres=gpu:1 --job-name=smk-{rule} --output=logs/{rule}_{wildcards}_%j.out --error=logs/{rule}_{wildcards}_%j.err"
+
+jobs: 10
+
+keep-going: True
+rerun-incomplete: True
+printshellcmds: True
+use-conda: True
+
