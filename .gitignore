@@ -9,9 +9,10 @@ workflow/*html
 
 ## Logs & snakemake.
 .snakemake/
-*png
+/*png
 *pdf
 *out
 *err
 *log
 Dorado_nanopore_workflow.tar.gz
+
