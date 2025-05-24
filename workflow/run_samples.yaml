@@ -1,0 +1,26 @@
+## Config file for Dorado analysis
+
+in_dir: '/project/spott/lizarraga/nanopore/dorado/raw/pod5_pass'
+in_dir: '/project/spott/dveracruz/Dorado_nanopore/test/raw'
+#out_dir: '/project/spott/lizarraga/nanopore/dorado/results/22_09_24' # This is a good example. 
+out_dir: '/project/spott/dveracruz/Dorado_nanopore/test'
+
+
+kit_name: "SQK-NBD114-24"
+## Barcodes to demultiplex: 01 to 24.
+## Barcodes used per sample, and sample names. as python lists, ['01','02','03'...,'24']
+barcodes: ['09','10']
+sample_names: ['EcoGII_GpC','EcoGII']
+#barcodes: ['09']
+#sample_names: ['EcoGII_GpC']
+
+
+## FIXED PARAMETERS - DO NOT CHANGE UNLESS NEW DORADO VERSION OR MODELS
+dorado_exec: '/project/spott/lizarraga/nanopore/dorado/dorado-0.4.3-linux-x64/bin/dorado'
+
+## Dorado models. 
+dorado_models_dir: '/project/spott/lizarraga/nanopore/dorado/dorado_models'
+model_base: 'dna_r10.4.1_e8.2_400bps_sup@v4.2.0'
+model_6mA: 'dna_r10.4.1_e8.2_400bps_sup@v4.2.0_6mA@v2'
+model_5mC: 'dna_r10.4.1_e8.2_400bps_sup@v4.2.0_5mC@v2'
+

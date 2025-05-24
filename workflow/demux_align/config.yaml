@@ -1,0 +1,9 @@
+## DEMUX:  --account=pi-spott  --partition=caslake --nodes=1 --ntasks-per-node=8 
+
+cluster: "sbatch --account=pi-spott --mem=80000 --ntasks-per-node=8 --job-name=smk-{rule} --output=logs/{rule}_%j.out --error=logs/{rule}_%j.err" 
+
+jobs: 10 
+use-conda: True
+keep-going: False
+rerun-incomplete: True
+printshellcmds: True
