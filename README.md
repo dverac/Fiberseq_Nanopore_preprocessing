@@ -1,3 +1,5 @@
+# Dorado Nanopore workflow
+
 ## Overview
 
 This workflow is intended for processing of raw Nanopore sequencing data
